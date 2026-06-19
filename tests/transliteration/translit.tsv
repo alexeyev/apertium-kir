@@ -1,0 +1,25 @@
+# Transliteration test data for apertium-kir orthography transducers.
+#
+# Format (TAB-separated):
+#   1. script: "lat" (Cyrillic->Latin) or "ara" (Cyrillic->Perso-Arabic)
+#   2. Cyrillic input
+#   3. expected output (must appear among the transducer's outputs)
+#
+# Lines starting with '#' and blank lines are ignored.
+# All pairs below were verified against the compiled transducers
+# (dev/ortho/cyr-lat.ohfst and dev/ortho/cyr-ara.ohfst).
+
+# --- Cyrillic -> Latin ---
+lat	тил	til
+lat	китеп	kitep
+lat	адам	adam
+lat	бала	bala
+lat	жыл	jıl
+lat	көз	köz
+lat	үй	üy
+lat	эл	el
+lat	кыргыз	qırğız
+
+# --- Cyrillic -> Perso-Arabic (cf. issue #13) ---
+ara	кыргыз	قىرعىز
+ara	адам	ادام
